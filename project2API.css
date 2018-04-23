@@ -1,0 +1,90 @@
+* {
+  box-sizing:border-box;
+  max-width:100%;
+}
+
+body {
+  background-image:url("daylight.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+main {
+  margin-top:7%;
+}
+
+nav {
+  position:fixed;
+  top:0%;
+  display:flex;
+  padding-left:75%;
+  background: linear-gradient(#3479a3,#3333FF, #FFFF66);
+  z-index:1;
+}
+
+.navDiv {
+  flex:1;
+  margin:auto;
+}
+
+#icon1 {
+  width:30%;
+}
+
+#icon2 {
+  width:38%;
+}
+
+#icon3 {
+  width:30%;
+}
+
+h1 {
+  font-size:27px;
+}
+
+main {
+  text-align:center;
+}
+
+header p {
+  font-size:18px;
+}
+
+.formDiv {
+  margin-bottom:15px;
+
+}
+
+div h2 {
+  font-size:22px;
+}
+
+#sunriseContainer p {
+  border:solid 2px blue;
+  width:125px;
+  height:30px;
+  margin:auto;
+  padding: 5px;
+}
+
+#sunsetContainer p {
+  border:solid 2px blue;
+  width:125px;
+  height:30px;
+  margin:auto;
+  padding: 5px;
+}
+
+#latPopulate, #lngPopulate {
+  cursor: not-allowed;
+}
+
+.inputAlign {
+  width:190px;
+  margin-left:1px;
+}
+
+#latLabel {
+  margin-left:12px;
+}
