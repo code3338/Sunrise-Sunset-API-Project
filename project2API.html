@@ -24,16 +24,16 @@
        <p>See time of sunrise for your city and state.</p>
      </header>
      <form>
-       <div class="formDiv">
+       <div class="formDiv" class="formDivInput">
          <p id="commentPara"></p>
          <label>Enter Date:</label>
          <input type="date" name="date" class="inputAlign" id="date"><br />
        </div>
-       <div class="formDiv">
+       <div class="formDiv" class="formDivInput">
          <label>Enter City:</label>
          <input type="text" name="state" placeholder="enter city name" class="inputAlign" id="cityInput"><br />
        </div>
-       <div id="stateContainer" class="formDiv">
+       <div id="stateContainer" class="formDiv" class="formDivInput">
           <label>Enter State:</label>
           <select name="stateInput" class="inputAlign" id="stateInput">
           	<option value="AL">Alabama</option>
@@ -91,11 +91,11 @@
        </div>
        <div class="formDiv">
          <label id="latLabel">Latitude:</label>
-         <input type="text" name="latitude" readonly="readonly" placeholder = "autopopulates" value="" class="inputAlign" id="latPopulate" ><br />
+         <span readonly="readonly" class="inputAlign" id="latPopulate"></span><br />
        </div>
        <div class="formDiv">
          <label>Longitude:</label>
-         <input type="text" name="longitude" readonly="readonly" placeholder = "autopopulates" value="" class="inputAlign" id="lngPopulate"><br />
+         <span readonly="readonly"  class="inputAlign" id="lngPopulate"></span><br />
        </div>
        <div class="formDiv">
          <label>Include time of sunset?</label>
@@ -117,7 +117,8 @@
          <p id="sunsetPara"></p><br /><br />
        </div>
        <div class="formDiv">
-         <p>To download a calendar of 2018 sunrise and sunset times for your city and state:</p>
+         <p id="calendarPara">
+           Dummy functionality:To download a calendar of 2018 sunrise and sunset times for your city and state:</p>
          <label>Enter email address:</label>
          <input type="email" name="email" placeholder:"Enter email address">
        </div>
@@ -129,6 +130,9 @@
        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/6c/bb/c0/beautiful-sunsets-at.jpg" style="display:none">
      </div>
     </main>
+    <footer>
+      <p id="copyrightPara">@copyright 2018</p>
+    <footer>
     <script src="project2API.js"></script>
   </body>
 </html>

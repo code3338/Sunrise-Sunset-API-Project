@@ -10,37 +10,27 @@ body {
 }
 
 main {
-  margin-top:7%;
+  margin-top:5%;
 }
 
 nav {
   position:fixed;
   top:0%;
   display:flex;
-  padding-left:75%;
-  background: linear-gradient(#3479a3,#3333FF, #FFFF66);
+  padding-left:89%;
+  background: linear-gradient(#3479a3,#3333FF);
   z-index:1;
 }
 
 .navDiv {
   flex:1;
-  margin:auto;
-}
-
-#icon1 {
-  width:30%;
-}
-
-#icon2 {
-  width:38%;
-}
-
-#icon3 {
-  width:30%;
+  border:solid 2px blue;
+  margin:0px 7px 0px 7px;
+  padding:2px;
 }
 
 h1 {
-  font-size:27px;
+  font-size:35px;
 }
 
 main {
@@ -48,11 +38,14 @@ main {
 }
 
 header p {
-  font-size:18px;
+  font-size:21px;
 }
 
 .formDiv {
   margin-bottom:15px;
+  width:400px;
+  margin:auto;
+  padding:9px;
 
 }
 
@@ -79,7 +72,6 @@ div h2 {
 #latPopulate, #lngPopulate {
   cursor: not-allowed;
 }
-
 .inputAlign {
   width:190px;
   margin-left:1px;
@@ -87,4 +79,148 @@ div h2 {
 
 #latLabel {
   margin-left:12px;
+}
+
+#calendarPara {
+  font-size:20px;
+}
+
+label {
+  font-size:18px;
+  font-weight:bold;
+}
+
+#commentPara {
+margin-top:0px;
+}
+
+footer {
+  margin:auto;
+  margin-top:7%;
+  width:20%;
+}
+
+#copyrightPara {
+  text-align:center;
+}
+
+@media (min-width:320px) {
+  main {
+    margin-top:15%;
+  }
+  nav {
+    position:fixed;
+    top:0%;
+    display:flex;
+    padding-left:58%;
+    background: linear-gradient(#3479a3,#3333FF);
+    z-index:1;
+  }
+
+  .navDiv {
+    flex:1;
+    border:solid 2px blue;
+    margin:0px 7px 0px 7px;
+
+  }
+}
+
+@media (min-width:480px) {
+  main {
+    margin-top:12%;
+  }
+  nav {
+    position:fixed;
+    top:0%;
+    display:flex;
+    padding-left:68%;
+    background: linear-gradient(#3479a3,#3333FF);
+    z-index:1;
+  }
+
+  .navDiv {
+    flex:1;
+    border:solid 2px blue;
+    margin:0px 7px 0px 7px;
+
+  }
+}
+
+@media (min-width:640px) {
+  main {
+    margin-top:9%;
+  }
+  nav {
+    position:fixed;
+    top:0%;
+    display:flex;
+    padding-left:78%;
+    background: linear-gradient(#3479a3,#3333FF);
+    z-index:1;
+  }
+
+  .navDiv {
+    flex:1;
+    border:solid 2px blue;
+    margin:0px 7px 0px 7px;
+
+  }
+}
+
+@media (min-width:768px) {
+  main {
+    margin-top:8%;
+  }
+  nav {
+    position:fixed;
+    top:0%;
+    display:flex;
+    padding-left:80%;
+    background: linear-gradient(#3479a3,#3333FF);
+    z-index:1;
+  }
+
+  .navDiv {
+    flex:1;
+    border:solid 2px blue;
+    margin:0px 7px 0px 7px;
+
+  }
+}
+
+@media (min-width:968px) {
+  nav {
+    position:fixed;
+    top:0%;
+    display:flex;
+    padding-left:85%;
+    background: linear-gradient(#3479a3,#3333FF);
+    z-index:1;
+  }
+
+  .navDiv {
+    flex:1;
+    border:solid 2px blue;
+    margin:0px 7px 0px 7px;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  nav {
+    position:fixed;
+    top:0%;
+    display:flex;
+    padding-left:87%;
+    background: linear-gradient(#3479a3,#3333FF);
+    z-index:1;
+  }
+
+  .navDiv {
+    flex:1;
+    border:solid 2px blue;
+    margin:0px 7px 0px 7px;
+    padding:3px;
+  }
+}
 }
