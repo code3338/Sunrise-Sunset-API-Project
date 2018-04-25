@@ -153,5 +153,13 @@ btnReset.addEventListener("click", function() {
    commentPara.style.borderStyle = "none";
    cityInput.style.cursor = "grab";
    stateInput.style.cursor = "pointer";
+});
 
+btn.addEventListener("click", function() {
+  if(yesSunset.checked == true) {
+  document.querySelector("body").style.backgroundImage = "url('sunset.jpg')";
+  }
+  else if(yesSunset.checked == false) {
+    document.querySelector("body").style.backgroundImage = "url('sunrise.jpg')";
+  }
 });

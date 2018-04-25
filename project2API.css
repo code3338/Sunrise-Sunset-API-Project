@@ -46,7 +46,23 @@ header p {
   width:400px;
   margin:auto;
   padding:9px;
+}
 
+.formDivInput {
+  margin-left:40%;
+}
+
+form {
+  width:50%;
+  margin:auto;
+}
+
+#lngLabel {
+  margin-left:15px;
+}
+
+#lngLabel, #latLabel {
+  color:black;
 }
 
 div h2 {
@@ -59,6 +75,7 @@ div h2 {
   height:30px;
   margin:auto;
   padding: 5px;
+  font-weight:bold;
 }
 
 #sunsetContainer p {
@@ -67,22 +84,26 @@ div h2 {
   height:30px;
   margin:auto;
   padding: 5px;
+  font-weight:bold;
 }
 
-#latPopulate, #lngPopulate {
-  cursor: not-allowed;
+#lngLabel, #latLabel, #lngPopulate, #latPopulate {
+  margin:auto;
+  font-weight:bold;
 }
+
+ #lngPopulate, #latPopulate {
+   color: #000080;
+ }
+
 .inputAlign {
   width:190px;
   margin-left:1px;
 }
 
-#latLabel {
-  margin-left:12px;
-}
-
 #calendarPara {
   font-size:20px;
+  font-weight:bold;
 }
 
 label {
@@ -91,13 +112,19 @@ label {
 }
 
 #commentPara {
-margin-top:0px;
+  margin:auto;
+  margin-top:0px;
+  margin-bottom:15px;
 }
 
 footer {
   margin:auto;
   margin-top:7%;
   width:20%;
+}
+
+#calendarPara {
+  font-weight:bold;
 }
 
 #copyrightPara {
@@ -122,6 +149,19 @@ footer {
     border:solid 2px blue;
     margin:0px 7px 0px 7px;
 
+  }
+
+  #lngLabel, #latLabel, #lngPopulate, #latPopulate {
+    margin:auto;
+    font-weight:bold;
+  }
+
+  #commentPara {
+    font-weight:bold;
+  }
+
+  #calendarPara {
+    font-weight:bold;
   }
 }
 
