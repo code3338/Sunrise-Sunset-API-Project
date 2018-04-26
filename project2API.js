@@ -1,5 +1,5 @@
 "use strict"
-
+/*To Do: make sure background images are blurred. Responsive design. Popup window for choosing new date when City and State are selected. Align main content to look better.More links in nav? */
 /*setting ajaxRequest variable equal to a new object from the constructor function XMLHttpRequest()*/
 let ajaxRequest = new XMLHttpRequest();
 
