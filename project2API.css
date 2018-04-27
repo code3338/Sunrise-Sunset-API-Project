@@ -8,6 +8,10 @@ body {
   background-repeat:no-repeat;
   background-size:cover;
 }
+#sunriseBackgroundImage, #sunsetBackgroundImage {
+  background-repeat:no-repeat;
+  background-size:cover;
+}
 
 main {
   margin-top:5%;
