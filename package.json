@@ -1,0 +1,25 @@
+{
+  "name": "project2_copy",
+  "version": "1.0.0",
+  "main": "project2API.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code3338/sunsetAPIProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code3338/sunsetAPIProject/issues"
+  },
+  "homepage": "https://github.com/code3338/sunsetAPIProject#readme",
+  "keywords": [
+    "\\"
+  ],
+  "description": "",
+  "dependencies": {
+    "moment": "^2.22.1"
+  }
+}

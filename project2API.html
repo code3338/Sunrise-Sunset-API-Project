@@ -89,6 +89,15 @@
           	<option value="WY">Wyoming</option>
           </select><br />
        </div>
+       <div>
+         <label>Pick time zone:</label>
+         <select id="timeZone">
+           <option value="8">Pacific time</option>
+           <option value="6">Central time</option>
+           <option value="5">Eastern time</option>
+           <option value="7">Mountain time</option>
+         </select>
+       </div>
        <div  id="latDiv" class="formDiv">
          <label id="latLabel">Latitude:</label>
          <span readonly="readonly" class="inputAlign" id="latPopulate"></span><br />
@@ -133,6 +142,7 @@
     <footer>
       <p id="copyrightPara">@copyright 2018</p>
     <footer>
+      <script src="moment.js"></script>
     <script src="project2API.js"></script>
   </body>
 </html>

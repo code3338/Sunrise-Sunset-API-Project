@@ -20,6 +20,7 @@ let noSunset = document.getElementById("noSunset");
 let sunsetYesNoContainer = document.getElementById("sunsetYesNoContainer");
 let btnReset = document.getElementById("btnReset");
 let commentPara = document.getElementById("commentPara");
+let timeZone = document.getElementById("timeZone");
 
 /*Setting an EventListener to radio button yes, that when the "yes" radio button is selected, the button name changes.*/
 yesSunset.addEventListener("click", function() {
@@ -48,13 +49,27 @@ function load() {
       console.log("data received");
       console.log(ajaxRequest.status);
       let data = JSON.parse(ajaxRequest.response);
-      let sunriseText = document.createTextNode(data.results.sunrise);
+
+      let timeZoneNum = parseInt(timeZone.value);
+      let hour = moment(data.results.sunrise,"HH:mm").subtract(timeZoneNum,"hours").hour();
+      let minute = moment(data.results.sunrise,"HH:mm").minutes();
+      if (minute < 10) {
+        minute= "0" + minute;
+      }
+      let sunriseText = document.createTextNode(hour + ":" + minute + " a.m.");
       sunrisePara.innerHTML = ""; /*Set paragraph in HTML set equal to an empty string, so that our answer does not stack on top of each other. We want only one anser to display for time of sunrise.*/
       sunrisePara.appendChild(sunriseText);
 
       /*Next, we add an if statement. When a user clicks the "see sunrise time" or "see sunrise and sunset times" button, if the yes sunset radio button is selected, we display the sunset time; else, we do not display the sunset time, and only display the sunrise time.*/
       if(yesSunset.checked == true) {
-        let sunsetText = document.createTextNode(data.results.sunset);
+        let timeZoneNum = parseInt(timeZone.value);
+        let hour = moment(data.results.sunset,"HH:mm").subtract(timeZoneNum,"hours").hour();
+        let minute = moment(data.results.sunset,"HH:mm").minutes();
+        if (minute < 10) {
+          minute= "0" + minute;
+        }
+
+        let sunsetText = document.createTextNode(hour + ":" + minute + " p.m.");
         sunsetPara.innerHTML = "";
         sunsetPara.appendChild(sunsetText);
       }

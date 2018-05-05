@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <script src="moment.js">
+    </script>
+    <script>
+      let hour = moment("11:07:27 AM","HH:mm").subtract(5,"hours").hour();
+      let minute = moment("11:07:27 AM","HH:mm").minutes();
+      if(minute < 10) {
+        minute= "0" + minute;
+      }
+      console.log(hour + ":" + minute);
+    </script>
+  </body>
+</html>
